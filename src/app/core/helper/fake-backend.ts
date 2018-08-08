@@ -1,9 +1,6 @@
-/**
- * Created by xavi on 2/17/17.
- */
 import {Http, BaseRequestOptions, Response, ResponseOptions, RequestMethod, ResponseType} from '@angular/http';
 import { MockBackend, MockConnection } from '@angular/http/testing';
-import {User} from "../models/user.model";
+import {User} from "../../models/user.model";
 import {USERS} from "../mocks/mock-users";
 
 class MockError extends Response implements Error {

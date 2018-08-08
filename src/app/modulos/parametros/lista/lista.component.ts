@@ -1,11 +1,11 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ParametroService } from '../../../services/parametro/parametro.service';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 import { DataSource } from '@angular/cdk/collections';
 import { Parametro } from '../../../models/parametro.model';
 import { GrupoParametro } from '../../../models/grupo-parametro.model';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialog } from '@angular/material';
 import { DialogNuevoParametroComponent } from '../dialog-nuevo-parametro/dialog-nuevo-parametro.component'
 
 @Component({

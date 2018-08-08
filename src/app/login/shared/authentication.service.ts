@@ -2,11 +2,9 @@ import {Injectable} from "@angular/core";
 import {Http, Response} from "@angular/http";
 import {Observable} from "rxjs";
 import {LoginObject} from "./login-object.model";
-import {Session} from "../../core/models/session.model";
+import {Session} from "../../models/session.model";
 import 'rxjs/add/operator/map';
-/**
- * Created by xavi on 5/16/17.
- */
+
 @Injectable()
 export class AuthenticationService {
 
