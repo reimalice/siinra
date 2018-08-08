@@ -1,0 +1,17 @@
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Nombre" [(ngModel)]="nuevoParametro.nombre">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Grupo">
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="button-row">
+  <button fxFlex mat-button color="primary" matDialogClose>Aceptar</button>
+  <button fxFlex mat-button color="primary" matDialogClose>Cerrar</button>
+
+</div>

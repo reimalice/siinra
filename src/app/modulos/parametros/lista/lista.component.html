@@ -1,0 +1,54 @@
+<mat-card>
+  <mat-card-content>
+    <mat-card-title text-align="center">Parámetros por grupo</mat-card-title>
+
+    <mat-form-field>
+      <mat-select placeholder="Grupo de parámetros">
+        <mat-option *ngFor="let grupo of grupos" [value]="grupo.id" (click)="lista(grupo.id)">
+          {{grupo.nombre}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+    <div class="mat-elevation-z8">
+      <button mat-mini-fab color="primary" class="custom-button" (click)="openDialog()">
+        <mat-icon>add</mat-icon>
+      </button>
+
+      <table mat-table [dataSource]="dataSource" class="table-margin-bottom">
+
+        <ng-container matColumnDef="nombre">
+          <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+          <mat-cell *matCellDef="let parametro"> {{parametro.nombre}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="grupo">
+          <mat-header-cell *matHeaderCellDef> Grupo </mat-header-cell>
+          <mat-cell *matCellDef="let parametro"> {{parametro.idGrupo}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="acciones">
+          <mat-header-cell *matHeaderCellDef> Acciones </mat-header-cell>
+          <mat-cell *matCellDef="let row">
+            <button mat-icon-button color="accent">
+              <mat-icon aria-label="Example icon-button with a heart icon">edit</mat-icon>
+            </button>
+            <button mat-icon-button color="warn">
+              <mat-icon aria-label="Example icon-button with a heart icon">delete</mat-icon>
+            </button>
+          </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+      </table>
+
+      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+
+
+    </div>
+
+  </mat-card-content>
+</mat-card>

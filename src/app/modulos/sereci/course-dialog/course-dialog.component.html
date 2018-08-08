@@ -1,0 +1,13 @@
+<h2 mat-dialog-title *ngIf="data.codigoResultado===4039" >
+        Respuesta exitosa <mat-icon color="primary">check</mat-icon>
+</h2>
+<h2 mat-dialog-title *ngIf="data.codigoResultado!==4039" class="text-warn">
+        Error <mat-icon color="warn">error</mat-icon>
+</h2>
+
+<mat-dialog-content>
+        {{data.mensaje}}
+</mat-dialog-content>
+<mat-dialog-actions>
+        <button fxFlex mat-button color="primary" matDialogClose>Cerrar</button>
+</mat-dialog-actions>

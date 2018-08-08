@@ -1,0 +1,25 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/assets/images/fondo_login.jpg');
+    background-size: cover;
+  }
+  .button-row{
+    text-align: right
+  }
+  .alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 5px; }
+  
+  .alert-danger {
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442; }
+    .alert-danger hr {
+    border-top-color: #e4b9b9; }
+    .alert-danger .alert-link {
+    color: #843534; }

@@ -1,0 +1,72 @@
+<!-- ============================================================== -->
+<!-- sidebar -->
+<!-- ============================================================== -->
+
+
+<div class="user-profile" style="background: url(assets/images/background/user-info.jpg) no-repeat;">
+    <!-- User profile image -->
+    <div class="profile-img"> </div>
+    <!-- User profile text-->
+    <!-- ============================================================== -->
+    <!-- Profile - style you can find in header.scss -->
+    <!-- ============================================================== -->
+    <div class="profile-text">
+        <i class="ti-angle-down font-12 m-l-5"></i>
+    </div>
+
+</div>
+<!-- <mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>MENU</span>
+    </mat-toolbar-row>
+</mat-toolbar> -->
+<!-- <mat-nav-list>
+    <a mat-list-item class="ml-2" style="font-size:15px;">
+        Módulos
+    </a>
+</mat-nav-list> -->
+
+<mat-expansion-panel class="no-shadow">
+    <mat-expansion-panel-header>
+
+        <mat-panel-title>
+            <mat-icon class="menu-icon">build</mat-icon>
+            Parámetros
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+        <mat-list-item routerLinkActive="selected">
+            <a [routerLink]="['/listaParametros']">
+                <mat-icon>list_alt</mat-icon>
+                <span class="submenu">Lista Parámetros</span>
+            </a>
+        </mat-list-item>
+        <!-- <mat-list-item>
+            <a href="#">Vodafone Airtime</a>
+        </mat-list-item>
+        <mat-list-item>
+            <a href="#">MTN Airtime</a>
+        </mat-list-item>
+        <mat-list-item>
+            <a href="#">GLO Airtime</a>
+        </mat-list-item> -->
+    </mat-nav-list>
+</mat-expansion-panel>
+
+<mat-expansion-panel class="no-shadow">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <mat-icon class="menu-icon">contacts</mat-icon>
+            SERECI
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+        <mat-list-item routerLinkActive="selected">
+            <a [routerLink]="['/consultaCertificado']">
+                <mat-icon>description</mat-icon>
+
+                <span class="submenu">Cert. de Nacimiento</span>
+            </a>
+        </mat-list-item>
+    </mat-nav-list>
+</mat-expansion-panel>

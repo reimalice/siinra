@@ -1,0 +1,92 @@
+<!-- ============================================================== -->
+<!-- Basic-->
+<!-- ============================================================== -->
+<mat-card>
+    <mat-card-content>
+        <mat-card-title text-align="center">Consulta de certificado de nacimiento servicio del SERECI</mat-card-title>
+        <mat-card-subtitle> Por favor tener en cuenta que todos los campos marcados con asterisco (*) son obligatorios. </mat-card-subtitle>
+        <mat-card-title>Datos de la partida</mat-card-title>
+
+        <div class="example-container">
+            <form [formGroup]="frmRegistro" fxLayout="column">
+
+                <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+
+                    <mat-form-field>
+                        <input type="number" formControlName="numeroOficialia" matInput placeholder="Número de oficialía" required>
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <input type="text" formControlName="numeroLibro" matInput placeholder="Número de libro" required>
+                    </mat-form-field>
+                </div>
+                <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+
+                    <mat-form-field>
+                        <input type="number" formControlName="numeroPartida" matInput placeholder="Número de partida" required>
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <input formControlName="fechaInscripcion" matInput [matDatepicker]="fInscripcion" placeholder="Fecha de inscripción" required>
+                        <mat-datepicker-toggle matSuffix [for]="fInscripcion"></mat-datepicker-toggle>
+                        <mat-datepicker #fInscripcion></mat-datepicker>
+                    </mat-form-field>
+                </div>
+
+                <mat-card-title>Datos del nacido</mat-card-title>
+
+                <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+
+                    <mat-form-field>
+                        <input type="number" formControlName="numeroDocumentoNacido" matInput placeholder="Número de documento de identidad del nacido">
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <input formControlName="fechaNacimientoNacido" matInput [matDatepicker]="fNacimiento" placeholder="Fecha de nacimiento del nacido"
+                            required>
+                        <mat-datepicker-toggle matSuffix [for]="fNacimiento"></mat-datepicker-toggle>
+                        <mat-datepicker #fNacimiento></mat-datepicker>
+                    </mat-form-field>
+
+                    <!-- <mat-form-field fxFlex>
+                        <input type="text" formControlName="complementoNacido" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();"
+                            matInput placeholder="Complementento del documento de identidad del Nacido">
+                    </mat-form-field> -->
+                </div>
+                <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+
+                    <mat-form-field>
+                        <input type="text" formControlName="nombresNacido" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();"
+                            matInput placeholder="Nombres del nacido" required>
+                    </mat-form-field>
+
+
+                    <mat-form-field>
+                        <input type="text" formControlName="primerApellidoNacido" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();"
+                            matInput placeholder="Primer apellido del nacido" required>
+
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <input type="text" formControlName="segundoApellidoNacido" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();"
+                            matInput placeholder="Segundo apellido del nacido" required>
+                    </mat-form-field>
+                </div>
+
+
+                <div class="button-row">
+                    <button fxFlex mat-button color="primary" (click)="consultaPartida()">Consultar</button>
+                </div>
+                <div *ngIf="active">
+                    <div class="loading-indicator">
+                        <mat-spinner></mat-spinner>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </mat-card-content>
+</mat-card>
+<!-- ============================================================== -->
+<!-- As an Accordion -->
+<!-- ============================================================== -->
