@@ -2,6 +2,21 @@
 
 Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cli) versión 6.1.1.
 
+# Instalando el proyecto
+
+Siga los siguientes pasos:
+1. Instalar dependencias
+
+```bash
+npm install
+```
+
+2. Iniciar el servidor del proyecto en http://localhost:4200
+
+```bash
+npm start
+```
+
 ## Servidor de Desarrollo
 
 Ejecute `ng serve` para un servidor de desarrollo. Navegar a `http://localhost:4200/`. La aplicación se volverá a cargar automáticamente si cambia alguno de los archivos fuente
