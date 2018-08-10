@@ -12,6 +12,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { ModulosRoutes } from './modulos.routing';
 
+import { ListaLotesComponent } from './lote-planos/lista-lotes/lista-lotes.component';
 import { ListaComponent } from './parametros/lista/lista.component';
 import { consultaCertificadoComponent } from './sereci/consultaCertificado/consultaCertificado.component';
 import { CourseDialogComponent } from './sereci/course-dialog/course-dialog.component';
@@ -33,7 +34,8 @@ import { DialogNuevoParametroComponent } from './parametros/dialog-nuevo-paramet
     consultaCertificadoComponent,
     CourseDialogComponent,
     DialogNuevoParametroComponent,
-    ListaComponent
+    ListaComponent,
+    ListaLotesComponent
   ],
   entryComponents: [
     CourseDialogComponent,
