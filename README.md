@@ -5,6 +5,7 @@ Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cl
 ## Instalando el proyecto
 
 Siga los siguientes pasos:
+
 1 Instalar dependencias
 
 ```bash
