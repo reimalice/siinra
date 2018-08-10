@@ -2,7 +2,7 @@
 
 Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cli) versión 6.1.1.
 
-# Instalando el proyecto
+## Instalando el proyecto
 
 Siga los siguientes pasos:
 1. Instalar dependencias
