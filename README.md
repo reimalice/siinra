@@ -1,4 +1,4 @@
-# SiinraProject
+# Proyecto Frontend SIINRA
 
 Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cli) versión 6.1.1.
 
