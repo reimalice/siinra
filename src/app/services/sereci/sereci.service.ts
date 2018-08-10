@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class ApiService {
+export class SereciService {
   API_URL = 'api';
 
   constructor(private httpClient: HttpClient) { }
@@ -12,5 +12,4 @@ export class ApiService {
   consultaPartidaNacimiento(partida) {
     return this.httpClient.post(`${this.API_URL}/consultaPartidaNacimiento`,partida);
   }
-
 }

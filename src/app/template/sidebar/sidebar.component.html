@@ -70,3 +70,21 @@
         </mat-list-item>
     </mat-nav-list>
 </mat-expansion-panel>
+
+<mat-expansion-panel class="no-shadow">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <mat-icon class="menu-icon">list_alt</mat-icon>
+            Lotes de planos
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+        <mat-list-item routerLinkActive="selected">
+            <a [routerLink]="['/consultaCertificado']">
+                <mat-icon>list_alt</mat-icon>
+
+                <span class="submenu">Casos para imprimir plano</span>
+            </a>
+        </mat-list-item>
+    </mat-nav-list>
+</mat-expansion-panel>

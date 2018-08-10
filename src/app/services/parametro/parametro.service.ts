@@ -8,7 +8,7 @@ import { Parametro } from '../../models/parametro.model';
 })
 
 export class ParametroService {
-  API_URL = 'api1';
+  API_URL = 'apiSemilla';
 
   constructor(private http: HttpClient) { }
 

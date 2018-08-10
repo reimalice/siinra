@@ -1,11 +1,3 @@
-/*
-Template Name: Material Pro Admin
-Author: Wrappixel
-Email: niravjoshi87@gmail.com
-File: scss
-*/
-
-
 /*******************
  Topbar
 *******************/
@@ -13,7 +5,7 @@ mat-toolbar{
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.5);
     
     &.topbar{
-        padding: 0px 15px;
+        padding: 0px 5px;
     }
     .navbar-header {
         
@@ -23,39 +15,16 @@ mat-toolbar{
             line-height: 18px;
             
             align-items: center;
-            .dark-logo {
-                display: none;
-                
+            .logo {
+                padding: 0px;                
             }
             b {
-               margin-right: 5px;
+               margin-right: 0px;
             }
-            img{
-                
-            }
+
         }
     }
-    
-    .app-search{
-        display: none;
-        width: 100%;
-        top: 0px;
-        left: 0px;
-        z-index: 1;
-        position: absolute;
-        .form-control{
-            line-height: 42px;
-            
-        }
-        .cl-srh-btn{
-            position: absolute;
-            top: 12px;
-            right: 15px;
-            font-size: 15px;
-            color:$bodytext;
-            cursor: pointer
-        }
-    }
+
     .profile-pic{
         width: 40px;
         height: 40px;

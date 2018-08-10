@@ -9,31 +9,6 @@ File: scss
 
 $bodyfont:'Poppins', sans-serif;
 $headingfont:'Poppins', sans-serif; 
-
-@import '~@angular/material/theming';
-
-/*Material Theme Colors*/
-
-$primary: mat-palette($mat-teal, 900);
-$accent: mat-palette($mat-indigo, 900);
-$warn: mat-palette($mat-pink, 700);
-$theme: mat-light-theme($primary, $accent, $warn);
-$background: map-get($mat-brown, 900);
-$foreground: map-get($theme, foreground);
-
-@include mat-core();
-
-$custom-typography: mat-typography-config( 
-  $font-family: 'Poppins, sans-serif'
-);
-
-// Override the typography in the core CSS.
-@include mat-core($custom-typography);
-
-// Default Theme
-@include angular-material-theme($theme);
-
-
 // Dark Theme
 
 /*Theme Colors*/

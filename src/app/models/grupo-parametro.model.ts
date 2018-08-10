@@ -1,4 +1,4 @@
-export interface GrupoParametro {
+export class GrupoParametro {
     id: number;
     nombre: string;
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApiService } from '../../../api.service';
+import { SereciService } from '../../../services/sereci/sereci.service';
 import * as moment from 'moment';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from "@angular/material";
@@ -23,7 +23,7 @@ export class consultaCertificadoComponent {
   codigoResultado: number
   public active: boolean;
 
-  constructor(private ApiService: ApiService, private fb: FormBuilder, private dialog: MatDialog) {
+  constructor(private ApiService: SereciService, private fb: FormBuilder, private dialog: MatDialog) {
     this.frmRegistro = this.fb.group({
       numeroOficialia: ['', Validators.required],
       numeroLibro: ['', Validators.required],
@@ -69,10 +69,10 @@ export class consultaCertificadoComponent {
       pFechaNacimientoNacido: moment(this.frmRegistro.value.fechaNacimientoNacido).format("DD/MM/YYYY")
     };
     this.ApiService.consultaPartidaNacimiento(consulta).subscribe(resultado => {
-      console.log(resultado)
+      //console.log(resultado)
       this.mensaje = resultado["notificacion"]
       this.codigoResultado = resultado["codigoResultado"]
-      console.log(this.codigoResultado)
+      //console.log(this.codigoResultado)
       this.openDialog();
       this.active = false;
     }, );
