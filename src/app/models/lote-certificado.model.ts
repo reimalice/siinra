@@ -3,7 +3,7 @@ export class LoteCertificado {
     idTramite: number;
     idEstado: number;
     idUsuarioRegistro: number;
-    fecha: Date;
+    fecha: string;
     nombreArchivo: string;
-    fechaRegistro: Date;
+    fechaRegistro: string;
 }
