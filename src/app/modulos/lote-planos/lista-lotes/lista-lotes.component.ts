@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { LoteCertificado } from '../../../models/lote-certificado.model'
 import { MatPaginator, MatTableDataSource, MatSort } from '@angular/material';
-import { filter } from 'rxjs/operators';
+import { Router } from "@angular/router";
+
 const ELEMENT_DATA: LoteCertificado[] = [
   { idLoteCertificado: 1, idTramite: 1, idEstado: 1, idUsuarioRegistro: 1, fecha: '28/07/2018', nombreArchivo: 'ABC', fechaRegistro: '28/07/2018' },
   { idLoteCertificado: 2, idTramite: 2, idEstado: 0, idUsuarioRegistro: 2, fecha: null, nombreArchivo: 'ABCD', fechaRegistro: '21/07/2018' },
@@ -25,7 +26,7 @@ export class ListaLotesComponent implements OnInit {
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
-  constructor() { 
+  constructor(private router: Router) { 
   }
 
 
@@ -40,7 +41,9 @@ export class ListaLotesComponent implements OnInit {
   applyFilter(filterValue) {
 
     this.dataSource.filter = filterValue;
-    console.log(filterValue);
+  }
+  nuevoLote(){
+    this.router.navigate(['/registroLote']);
 
   }
 }

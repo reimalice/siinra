@@ -1,0 +1,16 @@
+.card-container {
+    /* Style */
+    box-sizing: border-box;
+    /* Actual logic */
+    display: flex;
+    align-items: center;
+    text-align: right;
+  }
+  .example-form-field {
+    width: 200px;
+  }
+  
+  table {
+    width: 100%;
+  }
+  

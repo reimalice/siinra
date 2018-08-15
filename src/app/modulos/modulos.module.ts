@@ -16,8 +16,8 @@ import { ListaLotesComponent } from './lote-planos/lista-lotes/lista-lotes.compo
 import { ListaComponent } from './parametros/lista/lista.component';
 import { consultaCertificadoComponent } from './sereci/consultaCertificado/consultaCertificado.component';
 import { CourseDialogComponent } from './sereci/course-dialog/course-dialog.component';
-import { DialogNuevoParametroComponent } from './parametros/dialog-nuevo-parametro/dialog-nuevo-parametro.component'
-
+import { DialogNuevoParametroComponent } from './parametros/dialog-nuevo-parametro/dialog-nuevo-parametro.component';
+import { RegistroLoteComponent } from './lote-planos/registro-lote/registro-lote.component'
 @NgModule({
   imports: [
     CommonModule,
@@ -28,14 +28,14 @@ import { DialogNuevoParametroComponent } from './parametros/dialog-nuevo-paramet
     ReactiveFormsModule,
     FlexLayoutModule,
     CdkTableModule,
-
   ],
   declarations: [
     consultaCertificadoComponent,
     CourseDialogComponent,
     DialogNuevoParametroComponent,
     ListaComponent,
-    ListaLotesComponent
+    ListaLotesComponent,
+    RegistroLoteComponent
   ],
   entryComponents: [
     CourseDialogComponent,

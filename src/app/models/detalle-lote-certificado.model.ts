@@ -6,6 +6,6 @@ export class DetalleLoteCertificado {
     idUsuarioRegistro: number;
     numeroTituloCertificado: string;
     numeroCertificado: string;
-    fechaProceso: Date;
-    fechaRegistro: Date;
+    fechaProceso: string;
+    fechaRegistro: string;
 }
