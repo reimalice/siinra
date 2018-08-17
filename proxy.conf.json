@@ -14,5 +14,14 @@
         "pathRewrite": {
             "^/apiSemilla": "api"
         }
+    },
+    "/apiLoteTitulos/": {
+        "target": "http://172.17.2.30:8092",
+        "secure": false,
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/apiLoteTitulos": "api"
+        }
     }
+
 }
